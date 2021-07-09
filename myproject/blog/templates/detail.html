@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>상세보기</h1>
+    {{detail_item.name}}<br/>
+    {{detail_item.description}}<br/>
+    {{detail_item.price}}<br/>
+    {{detail_item.owner}}<br/>
+    <a href="{% url 'update' detail_item.id %}">수정하기</a>
+    <a href="{% url 'delete' detail_item.id %}">삭제하기</a>
+</body>
+</html>
